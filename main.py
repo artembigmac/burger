@@ -5,6 +5,20 @@ import telebot
 import requests
 from bs4 import BeautifulSoup
 import time
+from flask import Flask, templates
+from flask import request
+from threading import Thread
+import time
+import requests
+
+
+app = Flask('')
+
+@app.route('/')
+def home():    
+  return render_template("index.html")
+app.run(host='0.0.0.0', port=80)
+
 
 # Your Telegram bot token
 bot_token = '6903658767:AAEtq4YMoi4PglTtytmqWZ0NZ8dHgUcPH9U'
