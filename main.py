@@ -1,5 +1,4 @@
 import os
-from background import keep_alive
 import pip
 import telebot
 import requests
@@ -31,7 +30,6 @@ ids = [1149500487]
 for user_id in ids:
     bot.send_message(user_id, 'Бот запущен')
 
-keep_alive()
 print('Успех')
 
 # Initialize old_data as an empty set
